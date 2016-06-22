@@ -1,4 +1,4 @@
-# grunt-csv-to-json
+# grunt-csv-to-json [![Build Status][travis-image]][travis-url]
 
 > Generate static JSON from CSV key/value data.
 
@@ -177,3 +177,5 @@ Will generate:
 	]
 }
 ```
+[travis-url]: http://travis-ci.org/olibaron/grunt-csv-to-json
+[travis-image]: http://img.shields.io/travis/olibaron/grunt-csv-to-json/master.svg?style=flat
