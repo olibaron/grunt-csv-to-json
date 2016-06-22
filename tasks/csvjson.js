@@ -8,7 +8,7 @@ var defaultOptions = {
 		auto_parse : true
 	},
 	processValue : function (key, value) {
-		console.log(key);
+
 		if(key !== '') {
 			return value;
 		}
