@@ -36,7 +36,12 @@
     "grunt-contrib-nodeunit": "^0.3.3",
     "grunt": "~0.4.5"
   },
+  "scripts": {
+    "test": "grunt test"
+  },
   "keywords": [
-    "gruntplugin"
+    "gruntplugin",
+    "csv",
+    "json"
   ]
 }
