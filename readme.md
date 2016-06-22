@@ -1,4 +1,4 @@
-# grunt-csv-json [![Build Status][travis-image]][travis-url]
+# grunt-csv-to-json [![Build Status][travis-image]][travis-url]
 
 > Generate static JSON from CSV key/value data.
 
@@ -9,13 +9,13 @@ This plugin requires Grunt `~0.4.0`
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
-npm install grunt-csv-json --save-dev
+npm install grunt-csv-to-json --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('grunt-csv-json');
+grunt.loadNpmTasks('grunt-csv-to-json');
 ```
 
 
@@ -56,14 +56,12 @@ In your project's Gruntfile, add a section named `csvjson` to the data object pa
 
 ```js
 grunt.initConfig({
-  csvjson: {
-    options: {
-      // Task-specific options go here.
-    },
-    your_target: {
-      // Target-specific file lists and/or options go here.
-    }
-  }
+	csvjson: {
+		test: {
+			src: 'test/src/*.csv',
+			dest: 'test/dest'
+		}
+	},
 });
 ```
 
@@ -179,24 +177,3 @@ Will generate:
 	]
 }
 ```
-
-
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
-
-
-## Release History
-
-### `0.1.0`
-
-* Add support for generating multiple JSON resources per CSV document
-* Add CSV parser options to task config
-* Add field value processing hook to task config
-
-### `0.0.1`
-
-* Initial release
-
-
-[travis-url]: http://travis-ci.org/jpweeks/grunt-csv-json
-[travis-image]: http://img.shields.io/travis/jpweeks/grunt-csv-json/master.svg?style=flat
