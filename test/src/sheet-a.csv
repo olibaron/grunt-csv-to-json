@@ -1,0 +1,6 @@
+key,resource-a,resource-b
+some.item,value 1,value 3
+some.other.item,value 2,value 4
+an.array,0,3
+an.array,1,4
+an.array,2,5
