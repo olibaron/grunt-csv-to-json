@@ -1,4 +1,4 @@
-# grunt-csv-to-json [![Build Status][travis-image]][travis-url]
+# grunt-csv-to-json
 
 > Generate static JSON from CSV key/value data.
 
